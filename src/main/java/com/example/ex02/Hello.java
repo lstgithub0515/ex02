@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2023/7/23
  * @Version 1.0
  **/
-@RestController
+@RestController("/get")
 public class Hello {
 
-    @GetMapping("get")
+    @GetMapping("/msg")
     public String get() {
         return "Hello jenkins";
     }
